@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://hprobx73jcyb"]
+
+[ext_resource type="Script" path="res://scenes/Item.gd" id="1_5qq7w"]
+[ext_resource type="Texture2D" uid="uid://dxui4nxm4ljpn" path="res://scenes/bg.svg" id="1_m8as5"]
+[ext_resource type="Texture2D" uid="uid://d4k2xdwqngfo3" path="res://scenes/fg.svg" id="2_ttwaq"]
+
+[node name="Tile" type="Node2D"]
+script = ExtResource("1_5qq7w")
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(25, 25)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_m8as5")
+
+[node name="fg" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(25, 25)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_ttwaq")
+
+[node name="data" type="Label" parent="."]
+offset_left = 8.0
+offset_top = 3.0
+offset_right = 43.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "*"
+horizontal_alignment = 1
+vertical_alignment = 1
