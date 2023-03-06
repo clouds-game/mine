@@ -21,6 +21,7 @@ func _process(_delta):
     $fg.show()
     var d = self.map.map[self.x]
     if d == -1:
+      $data.text = "*"
       $data.show()
     elif d != 0:
       $data.text = str(d)
